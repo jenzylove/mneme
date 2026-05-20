@@ -37,6 +37,8 @@ Mneme turns these properties into a portable, verifiable memory layer that any a
 ---
 
 ## How It Works
+
+```
 ┌────────────────────────────────────────────────────────────────┐
 │                          Mneme                                 │
 │                                                                │
@@ -51,11 +53,13 @@ Mneme turns these properties into a portable, verifiable memory layer that any a
 │                     └──────────────┬─────────────────┘         │
 │                                    │                           │
 └────────────────────────────────────┼───────────────────────────┘
-│
-┌─────────────▼──────────────┐
-│   Shelby Hot Storage       │
-│   + Aptos-anchored receipts│
-└────────────────────────────┘
+                                     │
+                       ┌─────────────▼──────────────┐
+                       │   Shelby Hot Storage       │
+                       │   + Aptos-anchored receipts│
+                       └────────────────────────────┘
+```
+
 **Flow per message:**
 
 1. User sends a message to the agent
@@ -112,6 +116,8 @@ Then open [http://localhost:3001](http://localhost:3001) and start chatting. The
 ---
 
 ## Project Structure
+
+```
 mneme/
 ├── app/
 │   ├── api/chat/route.ts    # Claude integration + memory directive parsing
@@ -121,6 +127,8 @@ mneme/
 │   └── shelby.ts            # Mock Shelby SDK (production-aligned API surface)
 ├── components/ui/           # shadcn/ui components
 └── ...
+```
+
 ---
 
 ## What's Mocked vs. Real
@@ -152,7 +160,7 @@ The mock SDK was intentionally designed to mirror Shelby's public API surface so
 
 ## Why I'm Building This
 
-Hi, I'm Dee — a solo developer building infrastructure for AI agents. I've shipped two apps recently ([Claimr](https://github.com/jenzylove/claimr) and a DeFi platform) and Mneme is my third — but the first that combines my interests in agent infrastructure, verifiable systems, and the web3 storage stack.
+Hi, I'm Dee — a solo developer building infrastructure for AI agents. I've shipped two apps recently ([Claimr](https://github.com/jenzylove/claimr) and a creator marketplace) and Mneme is my third — but the first that combines my interests in agent infrastructure, verifiable systems, and the web3 storage stack.
 
 I believe agent memory is one of the most under-built layers of the AI infrastructure stack right now, and Shelby is uniquely positioned to be the substrate for it. This project is my attempt to prove that thesis with working code.
 
