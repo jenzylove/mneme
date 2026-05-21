@@ -6,6 +6,8 @@ Mneme gives AI agents long-term memory that survives across sessions, with every
 
 > Built as a reference implementation for [Shelby](https://shelby.xyz)'s hot storage protocol. Currently using a mocked SDK that mirrors the production API surface; will swap to `@shelby-protocol/sdk` once early access is granted.
 
+**🔗 Live demo: [mneme-ai.vercel.app](https://mneme-ai.vercel.app)**
+
 ---
 
 ## The Problem
