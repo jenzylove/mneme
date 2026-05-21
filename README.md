@@ -151,7 +151,8 @@ The mock SDK was intentionally designed to mirror Shelby's public API surface so
 - [ ] Swap mock SDK for real `@shelby-protocol/sdk` (pending early access)
 - [ ] Replace keyword recall with embedding-based vector similarity
 - [ ] Expose Mneme as a [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server so any agent framework can plug in
-- [ ] Multi-agent memory namespacing (shared knowledge bases)
+- [ ] Per-user authentication and namespaced memories (Aptos wallet sign-in scoped to `shelby.list({ namespace: userAddr })`)
+- [ ] Multi-agent memory namespacing for shared knowledge bases
 - [ ] Verifiable retrieval proofs in the UI (link to Aptos explorer per receipt)
 - [ ] Streaming responses
 - [ ] Memory pinning, archival, and access control
